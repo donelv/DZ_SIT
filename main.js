@@ -127,8 +127,8 @@ but.addEventListener('click', () => {
   n = decode(cd_arr, arr)
   console.log(n.isp)
   console.log('!!!')
-  N.innerHTML = 'Количество исправленных ошибок: ' + n.isp
-  C.innerHTML = 'Количество обнаруженных ошибок: ' + n.obn
+  N.innerHTML = 'Количество исправленных ошибок: ' + n.isp + '/' + arr.length
+  C.innerHTML = 'Количество обнаруженных ошибок: ' + n.obn + '/' + arr.length
   corr_spos.innerHTML =
     'Корректирующая способность: ' +
     Math.floor(n.isp / cd_arr.length) * 100 +
